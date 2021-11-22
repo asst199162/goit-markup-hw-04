@@ -5,8 +5,7 @@
   --footer-contacts-text-color: rgba(255, 255, 255, 0.6);
   --footer-link-color: #ffffff;
   --header-contacts-text-color: #757575;
-  --hover-color: #2196f3;
-  --focus-color: #2196f3;
+  --hover-focus-color: #2196f3;
   --hero-btn-color: #188ce8;
   --web-logo-color: #2196f3;
   --studio-header-logo-color: #212121;
@@ -92,6 +91,16 @@ img {
   padding-top: 94px;
   padding-bottom: 94px;
 }
+
+.size-icon {
+  width: 20px;
+  height: 20px;
+}
+
+.peculiarities-size-icon {
+  width: 70px;
+  height: 70px;
+}
 /* --------------HEADER----------------------- */
 
 .site {
@@ -157,9 +166,22 @@ img {
 .contacts-tel,
 .contacts-mail {
   color: var(--header-contacts-text-color);
+  display: flex;
+  align-content: center;
+  justify-content: center;
 }
+
 .contacts-item:not(:last-child) {
   margin-right: 50px;
+}
+
+.contacts-icon {
+  fill: currentColor;
+  margin-right: 10px;
+}
+
+.contacts-item {
+  display: flex;
 }
 
 .contacts-list {
@@ -172,26 +194,35 @@ img {
   margin-left: auto;
 }
 
-/* ----------------------HOVER---------------------------- */
+/* ----------------------HOVER-FOCUS--------------------------- */
 
 .site-nav-link:hover,
-.contacts-tel:hover,
-.contacts-mail:hover,
-.footer-tel:hover,
-.footer-mail:hover {
-  color: var(--hover-color);
-}
-
-/* ----------------------FOCUS---------------------------- */
-
 .site-nav-link:focus,
+.contacts-tel:hover,
 .contacts-tel:focus,
+.contacts-mail:hover,
 .contacts-mail:focus,
+.footer-tel:hover,
 .footer-tel:focus,
+.footer-mail:hover,
 .footer-mail:focus {
-  color: var(--focus-color);
+  color: var(--hover-focus-color);
 }
 
+.commands-social-link:hover,
+.commands-social-link:focus {
+  background-color: #2196f3;
+}
+
+.commands-social-link:hover .commands-social-icon,
+.commands-social-link:focus .commands-social-icon {
+  fill: #ffffff;
+}
+
+.contacts-icon:hover,
+.contacts-icon:focus {
+  fill: currentColor;
+}
 /* ----------------------HERO---------------------------- */
 
 .hero {
@@ -258,6 +289,20 @@ img {
 .peculiarities-text {
   margin-top: 10px;
 }
+
+.peculiarities-social {
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  background-color: #f5f4fa;
+  border-radius: 4px;
+  margin-bottom: 30px;
+  padding: 25px 100px;
+}
+
+/* .peculiarities-social-link {
+  border-radius: 4px;
+} */
 
 /* -----------------  WHAT WE DO --------------------------- */
 .work-title {
@@ -327,6 +372,34 @@ img {
 
 .commands-item:not(:last-child) {
   margin-right: 30px;
+}
+
+.commands-social-icon {
+  fill: #afb1b8;
+}
+
+.commads-social-list {
+  display: flex;
+  justify-content: center;
+  margin-top: 16px;
+}
+
+.commands-social-item {
+  width: 44px;
+  height: 44px;
+}
+
+.commands-social-item + .commands-social-item {
+  margin-left: 10px;
+}
+
+.commands-social-link {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 /* -----------------  FOOTER --------------------------- */

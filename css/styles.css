@@ -488,6 +488,10 @@ img {
   justify-content: center;
 }
 
+.footer-social-icon {
+  fill: #ffffff;
+}
+
 .footer-left-block {
   margin-right: 70px;
 }

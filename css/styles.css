@@ -254,6 +254,10 @@ img {
   padding: 200px 0px;
   background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
     url(../images/title.jpg);
+  background-size: cover;
+  max-width: 1600px;
+  margin-left: auto;
+  margin-right: auto;
   background-repeat: no-repeat;
   background-position: center;
 }
@@ -318,18 +322,14 @@ img {
 }
 
 .peculiarities-social {
+  height: 120px;
   display: flex;
-  align-content: center;
+  align-items: center;
   justify-content: center;
   background-color: #f5f4fa;
   border-radius: 4px;
   margin-bottom: 30px;
-  padding: 25px 100px;
 }
-
-/* .peculiarities-social-link {
-  border-radius: 4px;
-} */
 
 /* -----------------  WHAT WE DO --------------------------- */
 .work-title {
@@ -480,12 +480,7 @@ img {
 
 .footer-block {
   display: flex;
-}
-
-.footer-right-block {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+  align-items: baseline;
 }
 
 .footer-social-icon {
@@ -628,6 +623,9 @@ img {
   margin-right: 30px;
 }
 
+.portfolio-link-img {
+  display: block;
+}
 /* -----------------  PORTFOLIO BORDER IMG ----------------------------- */
 
 .portfolio-border {
@@ -639,8 +637,8 @@ img {
   padding: 20px 24px;
 }
 
-.portfolio-item-img:hover,
-.portfolio-item-img:focus {
+.portfolio-link-img:hover,
+.portfolio-link-img:focus {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
 }
